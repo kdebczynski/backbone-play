@@ -1,0 +1,32 @@
+html {}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    display: none;
+    margin: 0 auto;
+    width: 960px;
+    
+    &.active {
+        display: block;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.relative {
+    position: relative;
+}
+
+@import 'modules';

@@ -1,0 +1,69 @@
+#exercise-7 {
+    background: url('../images/u8_normal.png') no-repeat 140px 82px #f6f5f5;
+    
+    h2 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    
+    h3 {
+        position: absolute;
+        top: 55px;
+        left: 50px;
+    }
+    
+    .fill-in{
+        width: 250px;
+        
+        input {
+            width: 30px;
+        }
+        
+        label {
+            float: none;
+            margin: 5px 0px 0px 10px; 
+        }
+        
+        .result {
+            float: left;
+            margin: 4px 10px 0px 0px;
+        }
+    }
+    
+    #exercise-7-item-1 {
+        position: absolute;
+        top: 370px;
+        left: 70px;
+    }
+    
+    #exercise-7-item-2 {
+        position: absolute;
+        top: 370px;
+        left: 350px;
+    }
+    
+    #exercise-7-item-3 {
+        position: absolute;
+        top: 370px;
+        left: 650px;
+    }
+    
+    #exercise-7-item-4 {
+        position: absolute;
+        top: 430px;
+        left: 70px;
+    }
+    
+    #exercise-7-item-5 {
+        position: absolute;
+        top: 430px;
+        left: 350px;
+    }
+    
+    #exercise-7-item-6 {
+        position: absolute;
+        top: 430px;
+        left: 650px;
+    }
+}

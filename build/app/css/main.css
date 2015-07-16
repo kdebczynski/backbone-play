@@ -1,0 +1,411 @@
+/* line 3, ../../../src/app/css/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* line 9, ../../../src/app/css/main.scss */
+.scene {
+  display: none;
+  margin: 0 auto;
+  width: 960px;
+}
+/* line 14, ../../../src/app/css/main.scss */
+.scene.active {
+  display: block;
+}
+
+/* line 19, ../../../src/app/css/main.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 28, ../../../src/app/css/main.scss */
+.relative {
+  position: relative;
+}
+
+/* line 1, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  width: 215px;
+}
+/* line 7, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in input {
+  display: inline-block;
+  width: 150px;
+  border: 1px #a6a6a6 solid;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #a6a6a6;
+  vertical-align: top;
+}
+/* line 16, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in input:focus {
+  border: 1px #3a95cf solid;
+  box-shadow: 0px 0px 10px #3a95cf;
+}
+/* line 22, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in label {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 10px 0px 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* line 31, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in .result {
+  display: inline-block;
+  vertical-align: top;
+  visibility: none;
+  width: 21px;
+  height: 20px;
+  margin: 4px 0px 0px 10px;
+}
+/* line 39, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in .result.ok {
+  visibility: visible;
+  background: url("../images/u16_normal.png") no-repeat;
+}
+/* line 44, ../../../src/app/css/components/_fillInItem.scss */
+.fill-in .result.wrong {
+  visibility: visible;
+  background: url("../images/u58_normal.png") no-repeat;
+}
+
+/* line 1, ../../../src/app/css/components/_navigation.scss */
+.navigation {
+  margin: 10px 0px;
+}
+/* line 4, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows {
+  display: inline-block;
+  vertical-align: top;
+  width: 106px;
+  padding: 20px 0px 0px 0px;
+  background: url("../images/u82_line.png") repeat-x 0px 36px;
+}
+/* line 11, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* line 18, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow.prev {
+  margin: 0px 10px;
+  background: url("../images/u73_normal.png") no-repeat;
+}
+/* line 21, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow.prev:hover {
+  background: url("../images/u75_normal.png") no-repeat;
+}
+/* line 26, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow.next {
+  margin-left: -4px;
+  background: url("../images/u80_normal.png") no-repeat;
+}
+/* line 29, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow.next:hover {
+  background: url("../images/u78_normal.png") no-repeat;
+}
+/* line 34, ../../../src/app/css/components/_navigation.scss */
+.navigation .arrows .arrow.hidden {
+  visibility: hidden;
+}
+/* line 40, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items {
+  display: inline-block;
+  width: 854px;
+  overflow: hidden;
+  height: 40px;
+  padding: 20px 0px 0px 0px;
+}
+/* line 47, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 36px;
+  background: url("../images/u82_line.png") repeat-x 0px 17px;
+}
+/* line 55, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+/* line 61, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0px 30px 0px 0px;
+  border: 3px solid #309ec8;
+  background-color: #ffffff;
+  border-radius: 13px;
+  color: #309ec8;
+  font-weight: bold;
+}
+/* line 73, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li > span {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 6px;
+}
+/* line 79, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li.active {
+  background: url("../images/u83_line.png") repeat-x 0px 17px;
+}
+/* line 82, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li.active span {
+  border: 3px solid #4554ab;
+  color: #4554ab;
+}
+/* line 88, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  background: none;
+}
+/* line 94, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+/* line 100, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul li span {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-top: 9px;
+}
+/* line 107, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul li .dzyndzel {
+  position: absolute;
+  display: none;
+  top: -14px;
+  left: 3px;
+  width: 16px;
+  height: 21px;
+  background: url("../images/u91_normal.png") no-repeat;
+}
+/* line 119, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul li.active span {
+  background-color: #4554ab;
+}
+/* line 123, ../../../src/app/css/components/_navigation.scss */
+.navigation .navigation-items ul > li ul li.active .dzyndzel {
+  display: block;
+}
+
+/* line 1, ../../../src/app/css/components/_slider.scss */
+.slider {
+  width: 960px;
+  height: 540px;
+}
+/* line 5, ../../../src/app/css/components/_slider.scss */
+.slider .slider-content {
+  position: relative;
+}
+/* line 8, ../../../src/app/css/components/_slider.scss */
+.slider .slider-content .slide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+/* line 1, ../../../src/app/css/components/exercises/_main.scss */
+.exercise {
+  width: 920px;
+  height: 500px;
+  padding: 20px;
+}
+/* line 6, ../../../src/app/css/components/exercises/_main.scss */
+.exercise h2 {
+  color: #0086db;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 12, ../../../src/app/css/components/exercises/_main.scss */
+.exercise h3 {
+  color: #575757;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 18, ../../../src/app/css/components/exercises/_main.scss */
+.exercise .checker {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+/* line 26, ../../../src/app/css/components/exercises/_main.scss */
+.exercise .checker.check {
+  display: block;
+  background: url("../images/u13_normal.png") no-repeat;
+}
+/* line 31, ../../../src/app/css/components/exercises/_main.scss */
+.exercise .checker.refresh {
+  display: block;
+  background: url("../images/u11_normal.png") no-repeat;
+}
+
+/* line 1, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 {
+  background: url("../images/u38_normal.png") no-repeat 89px 70px #f6f5f5;
+}
+/* line 4, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 h2 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+/* line 10, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 h3 {
+  position: absolute;
+  top: 55px;
+  left: 50px;
+}
+/* line 16, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-1 {
+  position: absolute;
+  top: 180px;
+  left: 60px;
+}
+/* line 22, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-2 {
+  position: absolute;
+  top: 180px;
+  left: 337px;
+}
+/* line 28, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-3 {
+  position: absolute;
+  top: 180px;
+  left: 620px;
+}
+/* line 34, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-4 {
+  position: absolute;
+  top: 395px;
+  left: 60px;
+}
+/* line 40, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-5 {
+  position: absolute;
+  top: 395px;
+  left: 337px;
+}
+/* line 46, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 #exercise-6-item-6 {
+  position: absolute;
+  top: 395px;
+  left: 620px;
+}
+/* line 52, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 .helper {
+  position: absolute;
+  bottom: 20px;
+  left: 260px;
+  padding: 15px;
+  background-color: #def2ff;
+  color: #0086db;
+  border-radius: 5px;
+}
+/* line 61, ../../../src/app/css/components/exercises/_ex6.scss */
+#exercise-6 .helper span {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px 10px 0px 0px;
+}
+
+/* line 1, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 {
+  background: url("../images/u8_normal.png") no-repeat 140px 82px #f6f5f5;
+}
+/* line 4, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 h2 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+/* line 10, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 h3 {
+  position: absolute;
+  top: 55px;
+  left: 50px;
+}
+/* line 16, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 .fill-in {
+  width: 250px;
+}
+/* line 19, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 .fill-in input {
+  width: 30px;
+}
+/* line 23, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 .fill-in label {
+  float: none;
+  margin: 5px 0px 0px 10px;
+}
+/* line 28, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 .fill-in .result {
+  float: left;
+  margin: 4px 10px 0px 0px;
+}
+/* line 34, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-1 {
+  position: absolute;
+  top: 370px;
+  left: 70px;
+}
+/* line 40, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-2 {
+  position: absolute;
+  top: 370px;
+  left: 350px;
+}
+/* line 46, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-3 {
+  position: absolute;
+  top: 370px;
+  left: 650px;
+}
+/* line 52, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-4 {
+  position: absolute;
+  top: 430px;
+  left: 70px;
+}
+/* line 58, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-5 {
+  position: absolute;
+  top: 430px;
+  left: 350px;
+}
+/* line 64, ../../../src/app/css/components/exercises/_ex7.scss */
+#exercise-7 #exercise-7-item-6 {
+  position: absolute;
+  top: 430px;
+  left: 650px;
+}

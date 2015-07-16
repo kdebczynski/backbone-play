@@ -1,0 +1,23 @@
+{{ if (it.navigationConfig.length > 0) { }}
+<div class="arrows noselect">
+    <div class="arrow prev"></div>
+    <div class="arrow next"></div>
+</div>
+<div class="navigation-items">
+    <ul class="noselect">
+        {{ for(var i = 0; i < it.navigationConfig.length; i++) { }}
+        <li class="section">
+            <span data-section="{{=i+1}}">{{=i+1}}</span>
+            <ul>
+                {{ for(var j = 0; j < it.navigationConfig[i].length; j++) { }}
+                <li class="step relative">
+                    <span data-step="{{=it.navigationConfig[i][j]}}"></span>
+                    <div class="dzyndzel"></div>
+                </li>
+                {{ } }}
+            </ul>
+        </li>
+        {{ } }}
+    </ul>
+</div>
+{{ } }}

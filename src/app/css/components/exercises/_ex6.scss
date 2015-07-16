@@ -1,0 +1,67 @@
+#exercise-6 {
+    background: url('../images/u38_normal.png') no-repeat 89px 70px #f6f5f5;
+    
+    h2 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    
+    h3 {
+        position: absolute;
+        top: 55px;
+        left: 50px;
+    }
+    
+    #exercise-6-item-1 {
+        position: absolute;
+        top: 180px;
+        left: 60px;
+    }
+    
+    #exercise-6-item-2 {
+        position: absolute;
+        top: 180px;
+        left: 337px;
+    }
+    
+    #exercise-6-item-3 {
+        position: absolute;
+        top: 180px;
+        left: 620px;
+    }
+    
+    #exercise-6-item-4 {
+        position: absolute;
+        top: 395px;
+        left: 60px;
+    }
+    
+    #exercise-6-item-5 {
+        position: absolute;
+        top: 395px;
+        left: 337px;
+    }
+    
+    #exercise-6-item-6 {
+        position: absolute;
+        top: 395px;
+        left: 620px;
+    }
+    
+    .helper {
+        position: absolute;
+        bottom: 20px;
+        left: 260px;
+        padding: 15px;
+        background-color: #def2ff;
+        color: #0086db;
+        border-radius: 5px;
+        
+        span {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0px 10px 0px 0px;
+        }
+    }
+}
